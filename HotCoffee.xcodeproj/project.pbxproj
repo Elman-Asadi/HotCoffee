@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85302D9326DE082E00084DE8 /* NSManagedObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85302D9226DE082E00084DE8 /* NSManagedObjectExtensions.swift */; };
+		85302D9626DE0A3E00084DE8 /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85302D9526DE0A3E00084DE8 /* AddOrderViewModel.swift */; };
+		85302D9926DE0B8500084DE8 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85302D9826DE0B8500084DE8 /* AddOrderView.swift */; };
 		85C8021626DBAD61006D505B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8021526DBAD61006D505B /* AppDelegate.swift */; };
 		85C8021826DBAD61006D505B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8021726DBAD61006D505B /* SceneDelegate.swift */; };
 		85C8021A26DBAD61006D505B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8021926DBAD61006D505B /* ContentView.swift */; };
@@ -14,9 +17,13 @@
 		85C8021F26DBAD62006D505B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C8021E26DBAD62006D505B /* Assets.xcassets */; };
 		85C8022226DBAD62006D505B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C8022126DBAD62006D505B /* Preview Assets.xcassets */; };
 		85C8022526DBAD62006D505B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C8022326DBAD62006D505B /* LaunchScreen.storyboard */; };
+		85C8022E26DBB355006D505B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8022D26DBB355006D505B /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85302D9226DE082E00084DE8 /* NSManagedObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectExtensions.swift; sourceTree = "<group>"; };
+		85302D9526DE0A3E00084DE8 /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
+		85302D9826DE0B8500084DE8 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
 		85C8021226DBAD61006D505B /* HotCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C8021526DBAD61006D505B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85C8021726DBAD61006D505B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,7 @@
 		85C8022126DBAD62006D505B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85C8022426DBAD62006D505B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85C8022626DBAD62006D505B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C8022D26DBB355006D505B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85302D9126DE080D00084DE8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				85302D9226DE082E00084DE8 /* NSManagedObjectExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		85302D9426DE0A1500084DE8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				85302D9526DE0A3E00084DE8 /* AddOrderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		85302D9726DE0B2D00084DE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85C8021926DBAD61006D505B /* ContentView.swift */,
+				85302D9826DE0B8500084DE8 /* AddOrderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		85C8020926DBAD61006D505B = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +91,12 @@
 		85C8021426DBAD61006D505B /* HotCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				85302D9726DE0B2D00084DE8 /* Views */,
+				85302D9426DE0A1500084DE8 /* ViewModels */,
+				85302D9126DE080D00084DE8 /* Extensions */,
+				85C8022C26DBB332006D505B /* Managers */,
 				85C8021526DBAD61006D505B /* AppDelegate.swift */,
 				85C8021726DBAD61006D505B /* SceneDelegate.swift */,
-				85C8021926DBAD61006D505B /* ContentView.swift */,
 				85C8021E26DBAD62006D505B /* Assets.xcassets */,
 				85C8022326DBAD62006D505B /* LaunchScreen.storyboard */,
 				85C8022626DBAD62006D505B /* Info.plist */,
@@ -76,6 +112,14 @@
 				85C8022126DBAD62006D505B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85C8022C26DBB332006D505B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				85C8022D26DBB355006D505B /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +195,10 @@
 				85C8021626DBAD61006D505B /* AppDelegate.swift in Sources */,
 				85C8021D26DBAD61006D505B /* HotCoffee.xcdatamodeld in Sources */,
 				85C8021826DBAD61006D505B /* SceneDelegate.swift in Sources */,
+				85302D9326DE082E00084DE8 /* NSManagedObjectExtensions.swift in Sources */,
+				85C8022E26DBB355006D505B /* CoreDataManager.swift in Sources */,
+				85302D9926DE0B8500084DE8 /* AddOrderView.swift in Sources */,
+				85302D9626DE0A3E00084DE8 /* AddOrderViewModel.swift in Sources */,
 				85C8021A26DBAD61006D505B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
