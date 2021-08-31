@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var orderListVm : OrderListViewModel = OrderListViewModel()
+    @State private var isPresented : Bool = false
     
     var body: some View {
         
@@ -31,13 +32,30 @@ struct ContentView: View {
                             .padding([.leading], 10)
                     }
                     
-                }
+                }.onDelete(perform: delete)
+            }
+            .sheet(isPresented: $isPresented, onDismiss: {
+                print("ON Dismiss")
+                self.orderListVm.fetchAllOrders()
+            }) {
+                AddOrderView(isPresented: self.$isPresented)
             }
             .navigationTitle("Orders")
-            .navigationBarItems(trailing: Button("Add New Order") {})
+            .navigationBarItems(trailing: Button("Add New Order") {
+                isPresented.toggle()
+            })
         }
         
     }
+    
+    private func delete(at offsets: IndexSet) {
+        offsets.forEach { index in
+            let orderVM = self.orderListVm.orders[index]
+            self.orderListVm.deleteOrder(orderVM: orderVM)
+        }
+    }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
