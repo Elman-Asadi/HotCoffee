@@ -28,6 +28,20 @@ class CoreDataManager {
         } catch {
             print(error)
         }
+    }
+    
+    func fetchAllOrders() -> [Order] {
+        var orders = [Order]()
+        
+        let orderRequest : NSFetchRequest<Order> = Order.fetchRequest()
+        
+        do {
+            orders = try self.moc.fetch(orderRequest)
+        } catch {
+            print(error)
+        }
+        
+        return orders
         
     }
     

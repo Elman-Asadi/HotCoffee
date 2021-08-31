@@ -10,6 +10,7 @@
 		85302D9326DE082E00084DE8 /* NSManagedObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85302D9226DE082E00084DE8 /* NSManagedObjectExtensions.swift */; };
 		85302D9626DE0A3E00084DE8 /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85302D9526DE0A3E00084DE8 /* AddOrderViewModel.swift */; };
 		85302D9926DE0B8500084DE8 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85302D9826DE0B8500084DE8 /* AddOrderView.swift */; };
+		85302D9B26DE15C700084DE8 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85302D9A26DE15C700084DE8 /* OrderListViewModel.swift */; };
 		85C8021626DBAD61006D505B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8021526DBAD61006D505B /* AppDelegate.swift */; };
 		85C8021826DBAD61006D505B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8021726DBAD61006D505B /* SceneDelegate.swift */; };
 		85C8021A26DBAD61006D505B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8021926DBAD61006D505B /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 		85302D9226DE082E00084DE8 /* NSManagedObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectExtensions.swift; sourceTree = "<group>"; };
 		85302D9526DE0A3E00084DE8 /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
 		85302D9826DE0B8500084DE8 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
+		85302D9A26DE15C700084DE8 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 		85C8021226DBAD61006D505B /* HotCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C8021526DBAD61006D505B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85C8021726DBAD61006D505B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				85302D9526DE0A3E00084DE8 /* AddOrderViewModel.swift */,
+				85302D9A26DE15C700084DE8 /* OrderListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				85C8021626DBAD61006D505B /* AppDelegate.swift in Sources */,
 				85C8021D26DBAD61006D505B /* HotCoffee.xcdatamodeld in Sources */,
 				85C8021826DBAD61006D505B /* SceneDelegate.swift in Sources */,
+				85302D9B26DE15C700084DE8 /* OrderListViewModel.swift in Sources */,
 				85302D9326DE082E00084DE8 /* NSManagedObjectExtensions.swift in Sources */,
 				85C8022E26DBB355006D505B /* CoreDataManager.swift in Sources */,
 				85302D9926DE0B8500084DE8 /* AddOrderView.swift in Sources */,
